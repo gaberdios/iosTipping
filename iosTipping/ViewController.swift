@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var enterBillAmount: UITextField!
+    @IBOutlet weak var tipPercentLbl: UILabel!
+    @IBOutlet weak var tipPercentSlider: UISlider!
+    @IBOutlet weak var tipAmountLbl: UILabel!
+    @IBOutlet weak var totalAmountLbl: UILabel!
+    @IBOutlet weak var splitLbl: UILabel!
+    @IBOutlet weak var splitSlider: UISlider!
+    @IBOutlet weak var eachLbl: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
