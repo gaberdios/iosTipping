@@ -12,6 +12,7 @@
 		06D2C5ED1D6E3C8A00AA08DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D2C5EB1D6E3C8A00AA08DB /* Main.storyboard */; };
 		06D2C5EF1D6E3C8B00AA08DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D2C5EE1D6E3C8B00AA08DB /* Assets.xcassets */; };
 		06D2C5F21D6E3C8B00AA08DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D2C5F01D6E3C8B00AA08DB /* LaunchScreen.storyboard */; };
+		06D2C5FD1D6F7D4B00AA08DB /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D2C5FC1D6F7D4B00AA08DB /* TipModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		06D2C5EE1D6E3C8B00AA08DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06D2C5F11D6E3C8B00AA08DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06D2C5F31D6E3C8B00AA08DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06D2C5FC1D6F7D4B00AA08DB /* TipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		06D2C5E61D6E3C8A00AA08DB /* iosTipping */ = {
 			isa = PBXGroup;
 			children = (
+				06D2C5FB1D6F7CE400AA08DB /* Controller */,
+				06D2C5FA1D6F7CDA00AA08DB /* View */,
+				06D2C5F91D6F7CC400AA08DB /* Model */,
 				06D2C5E71D6E3C8A00AA08DB /* AppDelegate.swift */,
-				06D2C5E91D6E3C8A00AA08DB /* ViewController.swift */,
 				06D2C5EB1D6E3C8A00AA08DB /* Main.storyboard */,
 				06D2C5EE1D6E3C8B00AA08DB /* Assets.xcassets */,
 				06D2C5F01D6E3C8B00AA08DB /* LaunchScreen.storyboard */,
 				06D2C5F31D6E3C8B00AA08DB /* Info.plist */,
 			);
 			path = iosTipping;
+			sourceTree = "<group>";
+		};
+		06D2C5F91D6F7CC400AA08DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06D2C5FC1D6F7D4B00AA08DB /* TipModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		06D2C5FA1D6F7CDA00AA08DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06D2C5E91D6E3C8A00AA08DB /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		06D2C5FB1D6F7CE400AA08DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D2C5FD1D6F7D4B00AA08DB /* TipModel.swift in Sources */,
 				06D2C5EA1D6E3C8A00AA08DB /* ViewController.swift in Sources */,
 				06D2C5E81D6E3C8A00AA08DB /* AppDelegate.swift in Sources */,
 			);
