@@ -48,9 +48,15 @@ class ViewController: UIViewController {
         let currentValue = Int(sender.value)
         
         tipPercentLbl.text = "TIP \(currentValue)%"
-    
-        
     }
+    
+    @IBAction func splitSliderChanged(_ sender: UISlider) {
+        
+        let currentValue = Int(sender.value)
+        
+        splitLbl.text = "SPLIT \(currentValue)"
+    }
+    
     
 
 }
