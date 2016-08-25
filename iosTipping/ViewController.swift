@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - @IBOutlets
     @IBOutlet weak var enterBillAmount: UITextField!
     @IBOutlet weak var tipPercentLbl: UILabel!
     @IBOutlet weak var tipPercentSlider: UISlider!
@@ -19,17 +20,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitSlider: UISlider!
     @IBOutlet weak var eachLbl: UILabel!
     
+    // MARK: - Properties
+    var tip = TipCalc(billAmount: 0.0, tipPercent: 0.0)
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    
+        
     }
-
 
 }
 
