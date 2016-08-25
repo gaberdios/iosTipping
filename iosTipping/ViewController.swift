@@ -40,6 +40,18 @@ class ViewController: UIViewController {
     
         
     }
+    
+    // MARK: - @IBOutlet Action
+    
+    @IBAction func tipPercentSliderChanged(_ sender: UISlider) {
+        
+        let currentValue = Int(sender.value)
+        
+        tipPercentLbl.text = "TIP \(currentValue)%"
+    
+        
+    }
+    
 
 }
 
