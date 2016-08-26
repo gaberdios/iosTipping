@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         updateUI()
         tipPercentValue()
         splitNumValue()
-
+        calcTip()
         
         
         
@@ -55,24 +55,19 @@ class ViewController: UIViewController {
     
     // MARK: - @IBOutlet Action
     
-    @IBAction func tipPercentSliderChanged(_ sender: UISlider) {
-        
-        let currentValue = Int(sender.value)
-        
-        tipPercentLbl.text = "TIP \(currentValue)%"
-        
-        
+    @IBAction func enterBillAmountChanged(_ sender: AnyObject) {
         calcTip()
     }
-    
-    @IBAction func splitSliderChanged(_ sender: UISlider) {
+    @IBAction func tipPercentSliderChanged(_ sender: AnyObject) {
         
         tipPercentValue()
         calcTip()
+    }
+    
+    @IBAction func splitSliderChanged(_ sender: AnyObject) {
         
-        let currentValue = Int(sender.value)
-        
-        splitLbl.text = "SPLIT \(currentValue)"
+        splitNumValue()
+        calcTip()
     }
     
     // MARK: - Functions
@@ -98,17 +93,6 @@ class ViewController: UIViewController {
     func splitNumValue() {
         splitLbl.text = "SPLIT \(Int(splitSlider.value))"
     }
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
 
